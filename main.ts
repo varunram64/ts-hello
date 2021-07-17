@@ -63,3 +63,6 @@ let endsWithC = (<string>strMessage).endsWith('c'); // This will work for string
 log('endsWithC:' + endsWithC);
 let alternateway = (strMessage as string).endsWith('c');
 log('alternateway:' + alternateway);
+
+let doLog = (msg) => console.log(msg);
+doLog('alternateway:' + alternateway);
