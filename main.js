@@ -48,8 +48,15 @@ log('Blue:' + color.Blue);
 (function (color) {
     color[color["Purple"] = 3] = "Purple";
 })(color || (color = {}));
-;
+; // This is a best practise to store values as enums, 
+//if we don't declare values, there is a chance of over writing values
 log('Red:' + color.Red);
 log('Green:' + color.Green);
 log('Blue:' + color.Blue);
 log('Purple:' + color.Purple);
+var strMessage; // type is any
+strMessage = 'abc';
+var endsWithC = strMessage.endsWith('c'); // This will work for string only
+log('endsWithC:' + endsWithC);
+var alternateway = strMessage.endsWith('c');
+log('alternateway:' + alternateway);

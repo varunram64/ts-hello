@@ -57,3 +57,9 @@ log('Green:' + color.Green);
 log('Blue:' + color.Blue);
 log('Purple:' + color.Purple);
 
+let strMessage; // type is any
+strMessage = 'abc'; 
+let endsWithC = (<string>strMessage).endsWith('c'); // This will work for string only
+log('endsWithC:' + endsWithC);
+let alternateway = (strMessage as string).endsWith('c');
+log('alternateway:' + alternateway);
