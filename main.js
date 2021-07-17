@@ -12,3 +12,44 @@ function doSomething(i) {
     log('finally:' + i);
 }
 doSomething(number);
+var count = 5;
+//count = 'a'; //This can't be changed to alphabet.
+var a;
+a = 1;
+// a = true;
+// a = 'a';
+var b;
+var c;
+var d;
+var e = [1, 2, 3];
+var f = [1, true, 'a', false];
+log('a:' + a);
+log('b:' + b);
+log('c:' + c);
+log('d:' + d);
+log('e:' + e);
+log('f:' + f);
+var colorRed = 0;
+var colorGreen = 1;
+var colorBlue = 2;
+log('colorRed:' + colorRed);
+log('colorGreen:' + colorGreen);
+log('colorBlue:' + colorBlue);
+var color;
+(function (color) {
+    color[color["Red"] = 0] = "Red";
+    color[color["Green"] = 1] = "Green";
+    color[color["Blue"] = 2] = "Blue";
+})(color || (color = {}));
+;
+log('Red:' + color.Red);
+log('Green:' + color.Green);
+log('Blue:' + color.Blue);
+(function (color) {
+    color[color["Purple"] = 3] = "Purple";
+})(color || (color = {}));
+;
+log('Red:' + color.Red);
+log('Green:' + color.Green);
+log('Blue:' + color.Blue);
+log('Purple:' + color.Purple);
