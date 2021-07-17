@@ -66,3 +66,31 @@ log('alternateway:' + alternateway);
 
 let doLog = (msg) => console.log(msg);
 doLog('alternateway:' + alternateway);
+
+// one way to implement inline 
+// point: { x: number, y: number }
+let drawPoint = (point: { x: number, y: number }) => {
+    //....
+}
+
+drawPoint({
+    x: 1,
+    y: 2
+    //name: 'abc' // We can declare any properties as input which can cause runtime errors
+});
+
+// Other ways is interface
+interface Point {
+    x: number,
+    y: number
+}
+
+drawPoint = (point: Point) => {
+    //....
+}
+
+drawPoint({
+    x: 1,
+    y: 2
+});
+

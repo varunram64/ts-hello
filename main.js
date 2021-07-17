@@ -62,3 +62,20 @@ var alternateway = strMessage.endsWith('c');
 log('alternateway:' + alternateway);
 var doLog = function (msg) { return console.log(msg); };
 doLog('alternateway:' + alternateway);
+// one way to implement inline 
+// point: { x: number, y: number }
+var drawPoint = function (point) {
+    //....
+};
+drawPoint({
+    x: 1,
+    y: 2
+    //name: 'abc' // We can declare any properties as input which can cause runtime errors
+});
+drawPoint = function (point) {
+    //....
+};
+drawPoint({
+    x: 1,
+    y: 2
+});
